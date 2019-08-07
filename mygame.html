@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title> </title>
+
+  <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="./mine.css">
+    
+    <script src="gamejavascript.js" > </script>
+    
+        </head>
+
+  <body onLoad=startMe() onKeyPress=catchKeyCode()>
+
+    
+
+<div class="tophead">
+  <h1 id="mainhead"></h1>
+  
+  <img src="./images/intro.jpg" id="img1" alt='where is image'/>
+</div>
+
+
+<div class="container">
+  <div class="card"></div>
+  <div class="card">
+    <h1 class="title"></h1>
+    <form name=form1>
+	<input type=text size=46 name=hint value="Hii there!!" readonly class=txt1 id="hello">
+	<label for="Username"></label>
+	
+      <div class="inputpart">
+        <input id="Username" required="required" type=text name=guess1 size=50 class=txt2 title="Enter your guess here."/>
+        <label for="Username">Country</label>
+        <div class="bar"></div>
+      </div>
+      
+      <div class="button-container">
+        <button type=button value=Guess! onClick=guessit() class=btn title="Click here to get a hint or check your guess."><span>check it</span></button>
+      </div>
+	  <div class="button-container">
+        <button type=button value=New onClick=newGame() class=btn title="Click here to start a new game."><span>reset it</span></button>
+      </div>
+	  
+      
+    </form>
+  </div>
+  
+</div>
+<a id="hint" onclick=helpMe() title="Get Some Hint!"></a>
+<a id="myintro" href="my.html" title="who made it!"></a>
+    
+
+        
+    
+    <script src="./images/gamejavascript.js"></script>
+    
+</body>
+</html>
